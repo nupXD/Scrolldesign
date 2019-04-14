@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type and Run"
+        android:id="@+id/heading"
+        android:layout_margin="40sp"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:text="Type:"
+        android:textSize="20dp"
+        android:id="@+id/make"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/make"
+        android:hint="Enter Manufacture"
+        android:textSize="20dp"
+        android:id="@+id/name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:text="Year"
+        android:textSize="20dp"
+        android:id="@+id/yr"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yr"
+        android:hint="Enter year"
+        android:textSize="20dp"
+        android:id="@+id/year"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/year"
+        android:textSize="20dp"
+        android:text="Color"
+        android:id="@+id/cl"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cl"
+        android:hint="Enter color"
+        android:textSize="20dp"
+        android:id="@+id/color"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/color"
+        android:textSize="20dp"
+        android:text="Purchase Price($)"
+        android:id="@+id/pp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pp"
+        android:textSize="20dp"
+        android:hint="Enter purchase price"
+        android:id="@+id/purchase"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/purchase"
+        android:text="Engine size (liter)"
+        android:id="@+id/ee"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ee"
+        android:textSize="20dp"
+        android:hint="Enter Engine size"
+        android:id="@+id/engine"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/engine"
+    android:text="Create Car"
+    android:id="@+id/btn_create"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_create"
+        android:id="@+id/Scroll">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            />
+    </ScrollView>
+
+</RelativeLayout>
